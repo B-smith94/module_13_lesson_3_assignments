@@ -42,7 +42,7 @@ const ShoppingCart: React.FC = () => {
                 {state.length > 0? state.map((item) => (
                     <li key={item.id}>
                         {item.name} - ${item.price}
-                        <button onClick={() => removeItem(item.id)}>Remove Item</button>
+                        <button onClick={() => removeItem(item.id)}>🗑️</button>
                     </li>
                 )) : (
                 <p>No items in the cart</p>
